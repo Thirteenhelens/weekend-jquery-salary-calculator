@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="jquery-3.6.0.min.js"></script>
+    <script src="client.js"></script>
+    <title>Salary Calculator</title>
+</head>
+
+<header>
+    <h1>Salary Calculator</h1>
+</header>
+
+<body>
+
+    <div class=" addEmployee descriptor">
+        <p>Add Employee</p>
+    </div>
+
+    <div class="inputs">
+        <input placeholder="First Name" id="firstNameButton">
+        <input placeholder="Last Name" id="lastNameButton">
+        <input placeholder="ID" id="idNumButton">
+        <input placeholder="Title" id="titleButton">
+        <input placeholder="Annual Salary" id="annualSalaryButton">
+
+        <button type="button" class="btn btn-secondary submitButton" id="submitButton">Submit</button>
+    </div>
+
+    <div class="employeesTxt descriptor">
+        <p>Employees</p>
+    </div>
+
+    <table class="table table-success table-striped">
+        <thead>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>ID</th>
+                <th>Title</th>
+                <th>Annual Salary</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody id="tableBody">
+            <!-- employee is put here in table -->
+        </tbody>
+    </table>
+
+    <div class="monthlyCost">
+        <p >Total Monthly:</p>
+    </div>
+
+</body>
+
+</html>
